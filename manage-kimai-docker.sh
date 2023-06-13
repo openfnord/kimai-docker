@@ -41,6 +41,7 @@ kimai_check() {
         return 1
     fi
 }
+
 kimai_start() {
     if ! kimai_check; then
         kimai_install
@@ -51,7 +52,8 @@ kimai_start() {
     echo "you can now call manage-kimai-docker.sh web"
     echo "or just call"
     echo "xdg-open http://localhost:8001"
-   
+    echo ""
+    echo "for management call: docker exec -ti kimai /opt/kimai/bin/console <some kimai command>"
 }
 
 kimai_web() {
