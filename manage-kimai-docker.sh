@@ -46,7 +46,12 @@ kimai_start() {
         kimai_install
     fi
     docker start kimai-mysql kimai
-    kimai_web
+    echo ""
+    echo "point a webbrowser to your server IP:8001"
+    echo "you can now call manage-kimai-docker.sh kimai_web"
+    echo "or just call"
+    echo "xdg-open http://localhost:8001"
+   
 }
 
 kimai_web() {
