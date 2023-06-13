@@ -9,7 +9,7 @@ kimai_install() {
              -e MYSQL_DATABASE=kimai \
              -e MYSQL_USER=kimai \
              -e MYSQL_PASSWORD=kimai \
-             -e MYSQL_ROOT_PASSWORD=kimai \                                            
+             -e MYSQL_ROOT_PASSWORD=kimai \
              -p 3399:3306 -d mysql
 
     docker run --name kimai \
